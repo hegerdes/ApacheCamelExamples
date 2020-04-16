@@ -1,0 +1,10 @@
+#IDE-Files
+*.iml
+*/.idea/*
+
+#Buildfiles
+**/target/*
+*/.settings/*
+*.class
+*.factorypath
+*.project
