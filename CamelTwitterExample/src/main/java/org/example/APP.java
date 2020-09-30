@@ -13,7 +13,7 @@ public class APP {
     private static final String consumerSecret = "VxNQiRLwwKVD0K9mmfxlTTbVdgRpriORypnUbHhxeQw";
     private static final String accessToken = "26693234-W0YjxL9cMJrC0VZZ4xdgFMymxIQ10LeL1K8YlbBY";
     private static final String accessTokenSecret = "BZD51BgzbOdFstWZYsqB5p5dbuuDV12vrOdatzhY4E";
-    private static final String search = "corona";
+    private static final String search = "Debates2020";
     private static final int delay = 5000;
 
     public static void main(String[] args) throws Exception {
@@ -43,9 +43,8 @@ public class APP {
             }
         });
 
-        context.start();
-        Thread.sleep(1000000);
-        context.stop();
+        context.start();        Thread.sleep(10000000);
+        //context.stop();
 
     }
 }

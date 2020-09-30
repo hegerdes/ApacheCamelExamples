@@ -8,4 +8,8 @@ This minimal example creates a FileWatcher for a (S)FTP Server and creates local
 
 ## Example 2 Twitter-Search-Feed
 
-This example connects to the native Twitter-API and pulls tweets wich the selected search words. These tweets get converted to a German date format and pushes the tweets to a local WebSocket. Additionally all tweets are logged to the drive.
+This example connects to the native Twitter-API and pulls tweets wich the selected search words. These tweets get converted to a German date format and pushes the tweets to a local WebSocket. This socket can be consumed by any fronend
+Additionally all tweets are logged to the drive.
+
+### WebExample
+![Twitter Websocket Fronend](docs/Twitter.png)
