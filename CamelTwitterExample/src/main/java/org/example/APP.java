@@ -13,7 +13,7 @@ public class APP {
     private static final String consumerSecret = "VxNQiRLwwKVD0K9mmfxlTTbVdgRpriORypnUbHhxeQw";
     private static final String accessToken = "26693234-W0YjxL9cMJrC0VZZ4xdgFMymxIQ10LeL1K8YlbBY";
     private static final String accessTokenSecret = "BZD51BgzbOdFstWZYsqB5p5dbuuDV12vrOdatzhY4E";
-    private static final String search = "Debates2020";
+    private static final String search = "#tiktok";
     private static final int delay = 5000;
 
     public static void main(String[] args) throws Exception {
@@ -35,7 +35,7 @@ public class APP {
                 tc.setConsumerSecret(consumerSecret);
 
                 fromF("twitter-search://%s?delay=%s", search, delay)
-                        //.to("log:tweet")
+                        .to("log:tweet")
                         .process(new MyConverter())
                         // and push tweets to all web socket subscribers on camel-tweet
                         .to("file:data/twitter.log")
